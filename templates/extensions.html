@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions | AORTEC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/extensions.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('{{ url_for("static", filename="images/hero-image-top.png") }}'); /* Add background image directly here */
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Header -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore Our Advanced Extensions</h1>
+        <p>Enhance your medical analysis with our specialized tools designed for AAA cases</p>
+    </section>
+
+    <!-- Extensions Section -->
+    <section class="extensions">
+        <div class="extensions-container">
+            <!-- Extension 1 -->
+            <div class="extension-card">
+                <img src="{{ url_for('static', filename='images/extentions-par1.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Automated Measurement of AAA</h2>
+                <p>Quickly and accurately measure the size of the aneurysm.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <!-- Extension 2 -->
+            <div class="extension-card">
+                <img src="{{ url_for('static', filename='images/extentions-par2.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Predict Rate of Growth</h2>
+                <p>Estimate the growth rate of the aneurysm over time.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <!-- Extension 3 -->
+            <div class="extension-card">
+                <img src="{{ url_for('static', filename='images/extentions-par3.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Predict Risk of Rupture</h2>
+                <p>Evaluate the risk of aneurysm rupture based on patient data.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <!-- Extension 4 -->
+            <div class="extension-card">
+                <img src="{{ url_for('static', filename='images/extentions-par4.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Simulator</h2>
+                <p>Utilize AI to segment and analyze new AAA cases efficiently.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <!-- Extension 5 -->
+            <div class="extension-card">
+                <img src="{{ url_for('static', filename='images/extentions-par5.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Use Segmentation for Other Aneurysms</h2>
+                <p>Apply our model to segment different types of aneurysms.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+
+            <!-- New Card: Coming Soon -->
+            <div class="extension-card coming-soon">
+                <img src="{{ url_for('static', filename='images/extentions-par.png') }}" alt="Automated Measurement of AAA" class="card-image">
+                <h2>Extra Extension Coming Soon!</h2>
+                <p>We’re working on exciting new tools. Have suggestions? Share them with us!</p>
+                <a href="{{ url_for('contact') }}" class="suggest-btn">Give Suggestions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    {% include 'footer.html' %}
+</body>
+</html>

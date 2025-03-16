@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    /*background-image: url('../static/images/hero-image-segmentation.png');*/
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f9a826;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+ /* Service Selection Section */
+.service-selection {
+    padding: 10px 10px;
+    background-color: #fff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    object-fit: cover; /* Ensures the image covers the container */
+    max-height: 200px; /* Optional: Limit height for uniformity */
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin: 0;
+    padding: 15px;
+    color: #030b37;
+}
+
+.card p {
+    color: #666;
+}
+
+#service-details {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

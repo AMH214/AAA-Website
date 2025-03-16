@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f9a826;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+/* Extensions Section */
+.extensions {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.extensions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.extension-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    object-fit: cover; /* Ensures the image covers the container */
+    max-height: 200px; /* Optional: Limit height for uniformity */
+    display: block;
+}
+
+.extension-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.extension-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #f9a826;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #d4881d;
+}
+
+/* Coming Soon Card */
+.extension-card.coming-soon {
+    background-color: #fffbf2;
+    border: 1px dashed #f9a826;
+    box-shadow: none;
+}
+
+.extension-card.coming-soon h2 {
+    color: #d4881d;
+    font-style: italic;
+}
+
+.extension-card.coming-soon p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.suggest-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d4881d;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.suggest-btn:hover {
+    background-color: #b87018;
+}
